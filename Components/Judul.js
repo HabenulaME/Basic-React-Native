@@ -4,15 +4,17 @@ import {Text} from 'react-native';
 class Judul extends React.Component{
 	render(){
 		return (
-			<Text>BIODATA</Text>
+			<Text style = {salon.Header}>
+			{this.props.title}</Text>
 			)
 	}
 }
 const salon = {
-	Judul:{
-		color:'#f00',
+	Header:{
+		color:'#f00'
+		,
 		fontSize:50,
-		backgroundColor: '#fff'
+		backgroundColor: 'white'
 	}
 }
 
