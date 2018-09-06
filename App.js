@@ -1,28 +1,16 @@
 import React, {Component} from 'react';
-import {
-	Platform, 
-	StyleSheet, 
-	Text, 
-	View, 
-	Image
-} from 'react-native';
+import {Platform, StyleSheet, Text, View, Image} from 'react-native';
+import Judul from './Components/Judul';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
-
-type Props = {};
-export default class App extends Component<Props> {
+export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Nama : Habenula Mahogra Elfreda</Text>
-        <Text>Kelas: XI RPL 4</Text>
-        <Text>Absen: 13</Text>
-        <Image source={require('./gwganteng.png')} style={{width: 400, height:400}}
+      <Judul/>
+        <Text>Habenula Mahogra Elfreda</Text>
+        <Text>XI RPL 4</Text>
+        <Text>13</Text>
+        <Image source={require('./gwganteng.png')} style={{width: 150, height:50}}
         />
         
       </View>
@@ -35,7 +23,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#747fad',
   },
   welcome: {
     fontSize: 20,
